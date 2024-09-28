@@ -44,6 +44,11 @@ APP_TIKTOK_USERNAME="paste_stream_tiktok_account_name_here"
 pnpm nestjs-command stream-chat
 ```
 
+## Follow Me
+
+Follow my TikTok channel for more knowledge and insights.
+My Tiktok: [Gecko Tech](https://www.tiktok.com/@geckotech0101)
+
 ## License
 
 Nest is [MIT licensed](https://github.com/vodinhht20/tiktok-live-chat/blob/master/LICENSE).
