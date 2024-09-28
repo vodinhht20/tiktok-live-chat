@@ -30,6 +30,12 @@
 $ pnpm install
 ```
 
+## Set up environment variables
+
+```bash
+APP_TIKTOK_USERNAME="paste_stream_tiktok_account_name_here"
+```
+
 ## How does it work
 
 ```bash

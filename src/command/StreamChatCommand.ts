@@ -13,22 +13,21 @@ export class StreamChatCommand {
     var Table = require('cli-table3');
     var chalk = require('chalk');
 
-    // Tạo bảng để hiển thị thông tin chat
+    // Create a table to display chat information
     const table = new Table({
-      head: ['Tài khoản', 'Bình luận'],
+      head: ['Account', 'Comment'],
       colWidths: [20, 50]
     });
 
     let tiktokLiveConnection = new WebcastPushConnection(process.env.APP_TIKTOK_USERNAME);
 
-    // Lắng nghe sự kiện chat
+    // Listen for chat events
     tiktokLiveConnection.on('chat', data => {
       table.push([chalk.yellow(data.uniqueId), chalk.green(data.comment)]);
       console.log(table.toString());
       table.pop();
     });
 
-    console.log(('Đang lắng nghe sự kiện chat...'));
-
+    console.log(('Listening to chat event...'));
   }
 }
